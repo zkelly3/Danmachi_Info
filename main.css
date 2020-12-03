@@ -1,0 +1,81 @@
+html, body {
+margin: 0;
+padding: 0; }
+
+.board {
+  overflow: scroll;
+}
+
+
+
+.toggle {
+  text-decoration: none;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.61);
+  -webkit-transition: all 0.15s ease-out 0;
+  -moz-transition: all 0.15s ease-out 0;
+  transition: all 0.45s ease-out 0;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+  background: #224E6A;
+  opacity: 0.9;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: -250px;
+  -webkit-transition: all 0.15s ease-out 0;
+  -moz-transition: all 0.15s ease-out 0;
+  transition: all 0.15s ease-out 0;
+  width: 202px;
+  padding: 1.5em;
+  background: #224E6A;
+  z-index: 100;
+  opacity: 0.9;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+  color: #FFC5BF;
+  margin-left: 5px;
+}
+
+.sidebar li {
+  font-size: 19px;
+}
+
+.sidebar li a {
+  color: #fff;
+  font-size: 17px;
+  margin: 0;
+  margin-left: 10px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 200%;
+}
+
+.sidebar a:hover {
+  color: #FEB2AD;
+}
+
+#slide:checked + .container .sidebar {
+  left: 0px;
+}
+
+#slide:checked + .container .toggle {
+  left: 250px;
+}
+
+#slide {
+  display: none; 
+}
